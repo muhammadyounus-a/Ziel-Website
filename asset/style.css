@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--backgroundColor);
+}
+
+:root {
+    --textColor: #005FB7;
+    --teamColor: #0D4F8B;
+    --backgroundColor: #001021;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header.sticky {
+    padding: 10px 80px 10px 80px;
+    background-color: #001021;
+    box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.6s;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav__item a.active {
+    color: var(--teamColor) !important;
+}
+
+.nav__item a:hover {
+    color: var(--teamColor);
+}
+
+.nav__link {
+    padding: 10px;
+    color: var(--teamColor);
+    font-weight: 600;
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav button {
+    background-color: var(--teamColor);
+    border: 0px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 15px 25px;
+    color: #fff;
+}
+
+/* banner section css */
+
+.banner-section {
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    padding: 0px 0px 30px 0px;
+}
+
+.banner-section .container {
+    background: linear-gradient(82deg, #004D95 0%, #002950 57%, #031d38 100%);
+    border-radius: 20px;
+    height: auto;
+    padding: 50px 30px 80px 30px;
+}
+
+.banner-text h1 {
+    font-family: "Poppins", sans-serif;
+    color: white; 
+    font-size: 57px; 
+    font-weight: 600; 
+    line-height: 88px; 
+    word-wrap: break-word;
+    margin-top: 120px;
+}
+
+.banner-text h1 span {
+    color: rgba(244, 205, 35, 1);
+}
+
+.banner-text .enrollBtn {
+    background-color: #084379;
+    padding: 10px 30px;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dowload-btn {
+    display: flex;
+    gap: 20px;
+} 
+
+.dowload-btn button {
+    border: 0px;
+    background-color: rgba(25, 126, 213, 1);
+    padding: 10px 10px !important;
+    border-radius: 6px;
+}
+
+.dowload-btn button img {
+    height: 30px;
+    width: auto;
+}
+
+.dowloadNow {
+    background-color: transparent !important;
+    border: 2px solid #197ED5 !important;
+    color: #fff;
+    padding: 10px 20px !important;
+    border-radius: 6px !important;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.yellow-card {
+    background-color: rgba(244, 205, 35, 1);
+    height: 90%;
+    width: 80%;
+    border-radius: 50px;
+    position: relative;
+    z-index: 100;
+}
+
+.yellow-card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 510px;
+    width: auto;
+    z-index: 100;
+}
+
+.bullets-img {
+    position: absolute;
+    right: 45px;
+    bottom: 0px;
+    height: 250px;
+    width: auto;
+}
+
+.enrollments {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    top: -10px;
+    z-index: 200;
+    left: -60px;
+}
+
+.enrollments h6 {
+    color: #076CC2;
+    margin-left: 10px;
+}
+
+.enrollments img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: -25px;
+}
+
+.enrollments img:first-child {
+    margin-left: 0;
+}
+
+.line-img {
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    position: absolute;
+    right: 60px;
+    z-index: 200;
+    top: 60px;
+}
+
+.line-img img {
+    height: 30px;
+}
+
+.text-card {
+    position: absolute;
+    z-index: 200;
+    background-color: #fff;
+    border-radius: 10px 0px 10px 10px;
+    padding: 10px 20px 0px 20px;
+    bottom: -20px;
+    left: -50px;
+}
+
+.text-card p {
+    color: #0D4F8B;
+    line-height: 30px;
+}
+
+/* zielTech-section css */
+
+.zielTech-section {
+    margin-top: 100px;
+}
+
+.tech-text h2 {
+    color: #fff;
+    font-size: 55px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500; 
+}
+
+.tech-text h2 span {
+    color: var(--teamColor);
+}
+
+.tech-text p {
+    align-self: stretch; 
+    text-align: justify; 
+    color: #E1EFFD; 
+    font-size: 22px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 300; 
+    line-height: 55px;
+    margin-top: 50px;
+}
+
+/* mobileRepair-section css */
+
+.mobileRepair-section {
+    margin-top: 100px;
+}
+
+.mobileRepair-section h2 {
+    color: #fff;
+    font-size: 55px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500; 
+    text-align: center;
+}
+
+.mobileRepair-section h2 span {
+    color: var(--teamColor);
+}
+
+.mobileRepair-section .card {
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid var(--textColor);
+    border-radius: 10px;
+}
+
+.mobileRepair-section .card .card-body img {
+    height: 60px;
+    width: auto;
+}
+
+.mobileRepair-section .card .card-body h3 {
+    color: var(--textColor);
+    align-self: stretch;
+    font-size: 31px; 
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.mobileRepair-section .card .card-body p {
+    color: #E1EFFD; 
+    font-size: 19px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500; 
+    line-height: 40px;
+}
+
+/* learning-section css */
+
+.learning-section {
+    margin-top: 100px;
+}
+
+.learning-section h3 {
+    text-align: center; 
+    font-size: 40px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500; 
+    line-height: 34px;
+    color: #E1EFFD;
+}
+
+.learning-section h3 span {
+    color: var(--teamColor);
+}
+
+.timeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* //////////////////////// timeLineCard1 ///////////////////// */
+
+.timeLineCard1 {
+    width: 25%;
+    margin-top: 80px;
+}
+
+.timeLineCard1 .number {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #4069B9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard1 .line {
+    height: 60px;
+    width: 2px;
+    background-color: #4069B9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard1 .timeLineBar {
+    height: 45px;
+    width: 100%;
+    background-color: #4069B9;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.timeLineCard1 .corner-shape {
+    width: 30px;  
+    height: 30px;  
+    background-color: #4069B9;
+    shape-outside: polygon(0px 0px, 30px 0px, 15px 30px);
+    clip-path: polygon(0px 0px, 30px 0px, 15px 30px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+
+.timeLineCard1 h6 {
+    color: #076CC2; 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 700;
+}
+
+.timeLineCard1 p {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600; 
+    line-height: 34px;
+}
+
+/* //////////////////////// timeLineCard2 ///////////////////// */
+
+.timeLineCard2 {
+    width: 25%;
+    margin-top: 35px;
+}
+
+.timeLineCard2 .number {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #7B749F;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard2 .line {
+    height: 60px;
+    width: 2px;
+    background-color: #7B749F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard2 .timeLineBar {
+    height: 45px;
+    width: 100%;
+    background-color: #7B749F;
+    border-radius: 0px;
+}
+
+.timeLineCard2 .corner-shape {
+    width: 30px;
+    height: 30px;
+    background-color: #7B749F;
+    shape-outside: polygon(15px 0px, 30px 30px, 0px 30px);
+    clip-path: polygon(15px 0px, 30px 30px, 0px 30px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+
+.timeLineCard2 h6 {
+    color: #076CC2; 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 700;
+}
+
+.timeLineCard2 p {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600; 
+    line-height: 34px;
+}
+
+/* //////////////////////// timeLineCard3 ///////////////////// */
+
+.timeLineCard3 {
+    width: 25%;
+    margin-top: 80px;
+}
+
+.timeLineCard3 .number {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: #706DBC;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard3 .line {
+    height: 60px;
+    width: 2px;
+    background-color: #706DBC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard3 .timeLineBar {
+    height: 45px;
+    width: 100%;
+    background-color: #706DBC;
+    border-radius: 0px;
+}
+
+.timeLineCard3 .corner-shape {
+    width: 30px;  
+    height: 30px;  
+    background-color: #706DBC;
+    shape-outside: polygon(0px 0px, 30px 0px, 15px 30px);
+    clip-path: polygon(0px 0px, 30px 0px, 15px 30px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+
+.timeLineCard3 h6 {
+    color: #076CC2; 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 700;
+}
+
+.timeLineCard3 p {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600; 
+    line-height: 34px;
+}
+
+/* //////////////////////// timeLineCard4 ///////////////////// */
+
+.timeLineCard4 {
+    width: 25%;
+    margin-top: 35px;
+}
+
+.timeLineCard4 .number {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgba(100.58, 104.90, 227.72, 0.90);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard4 .line {
+    height: 60px;
+    width: 2px;
+    background-color: rgba(100.58, 104.90, 227.72, 0.90);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeLineCard4 .timeLineBar {
+    height: 45px;
+    width: 100%;
+    background-color: rgba(100.58, 104.90, 227.72, 0.90);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.timeLineCard4 .corner-shape {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(100.58, 104.90, 227.72, 0.90);
+    shape-outside: polygon(15px 0px, 30px 30px, 0px 30px);
+    clip-path: polygon(15px 0px, 30px 30px, 0px 30px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+
+.timeLineCard4 h6 {
+    color: #076CC2; 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 700;
+}
+
+.timeLineCard4 p {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600; 
+    line-height: 34px;
+}
+
+/* coursesSection css */
+
+.coursesSection {
+    margin-top: 100px;
+}
+
+.coursesSection h2 {
+    text-align: center;
+    color: #E1EFFD; 
+    font-size: 35px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+.coursesSection h3 {
+    text-align: center;
+    color: #076CC2; 
+    font-size: 39px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+.online-course-details h5 {
+    color: #6DC8FF; 
+    font-size: 30px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+.course-details {
+    display: flex;
+}
+
+.main-course-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-details img {
+    height: 20px;
+    width: auto;
+    margin-top: 5px;
+}
+
+.course-details p {
+    color: #BFDBFE; 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.course-details2 {
+    display: flex;
+}
+
+.course-details2 p {
+    color: #BFDBFE; 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+}
+
+.course-details2 span {
+    color: #3087D7;
+}
+
+.online-course-details button {
+    background: linear-gradient(90deg, #075FB0 0%, #07203B 100%); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12); 
+    border-radius: 10px; 
+    border: 1px solid #6AB5FF;
+    width: 100%;
+    padding: 10px 0px;
+    color: white; 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+}
+
+.coursesSection .explore-btn {
+    background: linear-gradient(90deg, #0D4F8B 0%, #031525 100%); 
+    border-radius: 10px; 
+    border: 1px rgba(13, 79, 139, 0.50) solid;
+    color: white; 
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/* modules-section css */
+
+.modules-section {
+    margin-top: 100px;
+}
+
+.modules-section h3 {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 40px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+/* media query starting */
+
+@media all and (min-width:1900px) {
+    .banner-section {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media all and (max-width:1400px) {
+
+    .banner-text h1 {
+        font-family: "Poppins", sans-serif;
+        color: white; 
+        font-size: 47px; 
+        font-weight: 600; 
+        line-height: 68px; 
+        word-wrap: break-word;
+        margin-top: 120px;
+    }
+
+    .yellow-card img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 460px;
+        width: auto;
+        z-index: 100;
+    }
+
+    .enrollments {
+        position: absolute;
+        background-color: #fff;
+        padding: 20px 10px;
+        border-radius: 10px;
+        top: -10px;
+        z-index: 200;
+        left: -80px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    
+    .banner-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-text h1 {
+        font-family: "Poppins", sans-serif;
+        color: white; 
+        font-size: 38px; 
+        font-weight: 600; 
+        line-height: 50px; 
+        word-wrap: break-word;
+        margin-top: 120px;
+    }
+
+    .yellow-card img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 420px;
+        width: auto;
+        z-index: 100;
+    }
+
+    .enrollments {
+        position: absolute;
+        background-color: #fff;
+        padding: 20px 10px;
+        border-radius: 10px;
+        top: -10px;
+        z-index: 200;
+        left: -120px;
+    }
+}
+
+@media all and (max-width:1145px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    header {
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    header.sticky .header__toggle {
+        display: inline;
+        color: #000000;
+        font-size: 24px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #000000;
+    }
+
+    .header__close:hover {
+        background-color: var(--teamColor);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--backgroundColor);
+        color: #000000ee;
+        width: 40%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        z-index: 1000;
+    }
+
+    header.sticky {
+        padding: 10px 80px 15px 80px;
+        background-color: #fff;
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+
+    header .logo {
+        position: relative;
+        color: var(--textColor);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.6s;
+    }
+
+    .logo img {
+        height: 20px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item a {
+        color: #000000;
+    }
+
+    .nav__item {
+        margin: 2rem 0;
+    }
+
+    .nav__list a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav__list a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--teamColor);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    .logo img {
+        height: 15px;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #ffffffee;
+        font-size: 26px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #000000;
+    }
+
+    .nav__item a {
+        color: #000000;
+    }
+
+    .header__close:hover {
+        background-color: var(--backgroundColor);
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--backgroundColor);
+        color: #eeee;
+        width: 100%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 0%;
+        z-index: 1000;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item {
+        margin: 1.5rem 0;
+    }
+
+    header.sticky {
+        padding: 10px 35px 10px 35px;
+        background-color: #fff;
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+}
