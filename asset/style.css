@@ -1137,6 +1137,40 @@ form button {
     margin-top: 30px;
 }
 
+.contact-number {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-number img {
+    height: 38px;
+}
+
+.contact-number h6 {
+    color: #3076B7; 
+    font-size: 13px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact-number p {
+    color: #0D4F8B; 
+    font-size: 13px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* footer section */
+
+footer {
+    margin-top: 100px;
+    background-color: black;
+    height: 60vh;
+}
+
 /* media query starting */
 
 @media all and (min-width:1900px) {
