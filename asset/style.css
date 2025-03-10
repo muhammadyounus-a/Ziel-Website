@@ -746,6 +746,147 @@ dl, ol, ul {
     font-weight: 600;
 }
 
+.smartphone-img {
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes triangleStroke {
+    from { stroke-dashoffset: 90; }
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    background-color: #E6F3FF;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.button-outer-circle {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.button-icon svg {
+    height: 100%;
+    width: 100%;
+    fill: var(--teamColor);
+}
+
+.triangle {
+    animation: fadeIn 7s ease;
+}
+
+.path {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+    animation: triangleStroke 3s ease forwards;
+}
+
+.has-scale-animation {
+    animation: smallScale 3s infinite;
+}
+
+.has-delay-short {
+    animation-delay: 0.5s;
+}
+
+.courseModules-datas {
+    height: 63vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.courseModules-datas::-webkit-scrollbar {
+    display: none;
+}
+
+.courseModules-datas h3 {
+    color: #3087D7; 
+    font-size: 44px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600; 
+    text-align: left;
+}
+
+.courseModules-datas-main {
+    border-left: 4px solid var(--textColor);
+    padding: 0px 0px 0px 30px;
+}
+
+.courseModules-datas-details{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.courseModules-datas-details img {
+    height: 25px;
+}
+
+.courseModules-datas-details h6 {
+    color: #E1EFFD; 
+    font-size: 28px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+}
+
+.courseModules-datas-main2 {
+    border-left: 4px solid #5F5F5F;
+    padding: 0px 0px 0px 30px;
+}
+
+/* reviewSlider-section css */
+
+.reviewSlider-section {
+    margin-top: 100px;
+}
+
 /* media query starting */
 
 @media all and (min-width:1900px) {
