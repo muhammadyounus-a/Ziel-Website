@@ -836,7 +836,7 @@ dl, ol, ul {
 }
 
 .courseModules-datas {
-    height: 63vh;
+    height: 520px;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -1168,8 +1168,8 @@ form button {
 footer {
     margin-top: 100px;
     background-color: black;
-    height: 60vh;
-    padding: 40px 0px;
+    height: auto;
+    padding: 40px 0px 20px 0px;
 }
 
 .footer-first-col .footer-logo {
