@@ -887,6 +887,65 @@ dl, ol, ul {
     margin-top: 100px;
 }
 
+.reviewSlider-section h3 {
+    color: #E1EFFD; 
+    font-size: 32px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.reviewSlider-section h6 {
+    text-align: center; 
+    color: #E5E5E5; 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 400;
+}
+
+.reviewSlider-section .slider {
+    margin-top: 100px;
+}
+
+.owl-carousel .owl-item .card {
+    padding: 30px;
+    position: relative;
+    background-color: var(--backgroundColor);
+    border: 0px;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow-y: auto !important;
+    padding-bottom: 20px;
+}
+
+.owl-carousel .owl-item .card {
+    opacity: 0.8;
+    transform: scale3d(0.8, 0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item.active.center .card {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    border: 1px solid #304996;
+    background-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: var(--teamColor) !important;
+}
+
 /* media query starting */
 
 @media all and (min-width:1900px) {
