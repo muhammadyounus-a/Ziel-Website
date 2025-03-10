@@ -996,6 +996,147 @@ dl, ol, ul {
     height: 18px;
 }
 
+/* contact section */
+
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-section h4 {
+    text-align: center; 
+    color: #E1EFFD; 
+    font-size: 32px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+.contact-section h6 {
+    text-align: center;
+    color: rgba(229, 229, 229, 0.60); 
+    font-size: 24px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+}
+
+.inputData h2 {
+    color: rgba(13, 79, 139, 0.85); 
+    font-size: 50px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+.inputData h2 span {
+    color: rgba(196, 226, 254, 0.80); 
+    font-size: 50px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 600;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.form-item {
+    position: relative;
+    margin-top: 30px;
+}
+
+.form-item input {
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border: 1px solid var(--textColor);
+    transition: all 0.3s ease;
+    padding: 0 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #C4E2FE;
+}
+
+.form-item input:focus {
+    border-color: var(--textColor);
+    outline: none;
+}
+
+.form-item label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    color: #C4E2FE;
+    background: var(--backgroundColor);
+    padding: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.form-item label span {
+    color: #EB5757;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-item input:focus + label,
+.form-item input:valid + label {
+    top: 5px;
+    font-size: 12px;
+}
+
+.dropdown-container {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.dropdown-container select {
+    width: 100%;
+    height: 55px;
+    background: var(--backgroundColor);
+    border: 1px solid var(--textColor);
+    outline: var(--teamColor);
+    transition: all 0.3s ease;
+    padding: 0 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #C4E2FE;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 5px;
+    cursor: pointer;
+}
+
+.dropdown-container .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #C4E2FE;
+    border-bottom: 2px solid #C4E2FE;
+    transform: translateY(-50%) rotate(-45deg);
+    pointer-events: none; /* Ensures the icon doesn't interfere with clicking the select */
+}
+
+form button {
+    background: linear-gradient(90deg, #075FB0 0%, #07203B 100%); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12); 
+    border-radius: 50px; 
+    border: 1px #6AB5FF solid;
+    width: 100%;
+    padding: 15px 0px;
+    color: white; 
+    font-size: 16px; 
+    font-family: "Inter", sans-serif; 
+    font-weight: 500;
+    margin-top: 30px;
+}
+
 /* media query starting */
 
 @media all and (min-width:1900px) {
