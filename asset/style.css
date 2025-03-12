@@ -1267,6 +1267,8 @@ footer ul li a:hover{
 /* media query starting */
 
 @media all and (min-width:1900px) {
+
+    /* banner section */
     .banner-section {
         display: flex;
         align-items: center;
@@ -1275,6 +1277,7 @@ footer ul li a:hover{
 
 @media all and (max-width:1400px) {
 
+    /* banner section */
     .banner-text h1 {
         font-family: "Poppins", sans-serif;
         color: white; 
@@ -1304,10 +1307,102 @@ footer ul li a:hover{
         z-index: 200;
         left: -80px;
     }
+
+    /* learning-section css */
+
+    .timeLine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .timeLineCard1, .timeLineCard3 {
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    .timeLineCard2, .timeLineCard4 {
+        width: 50%;
+        margin-top: 102px;
+    }
+
+    .timeLineCard2 .timeLineBar {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .timeLineCard3 .timeLineBar {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    /* coursesSection css */
+
+    .online-course-details button {
+        padding: 8px 0px;
+        margin-top: 10px !important;
+    }
+
+    .course-details {
+        margin-top: 10px !important;
+    }
+
+    /* modules-section css */
+
+    .courseModules-datas {
+        height: 447px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    /* contact section */
+
+    .form-item input {
+        height: 45px;
+    }
+
+    .form-item label {
+        font-size: 13px;
+    }
+
+    .dropdown-container select {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .dropdown-container .dropdown-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    form button {
+        padding: 8px 0px;
+    }
+}
+
+@media all and (max-width:1240px) {
+    /* navbar css */
+    .nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav__item a {
+        position: relative;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        transition: 0.6s;
+        font-family: "Poppins", sans-serif;
+    }
 }
 
 @media all and (max-width:1200px) {
-    
+
+    /* banner section */
     .banner-section {
         display: flex;
         align-items: center;
@@ -1342,6 +1437,48 @@ footer ul li a:hover{
         z-index: 200;
         left: -120px;
     }
+
+    /* learning-section css */
+
+    .timeLineCard1, .timeLineCard3 {
+        margin-top: 80px;
+    }
+
+    .timeLineCard2 {
+        margin-top: 35px;
+    }
+
+    .timeLineCard4 {
+        margin-top: 68px;
+    }
+
+    /* modules-section css */
+
+    .courseModules-datas h3 {
+        color: #3087D7; 
+        font-size: 30px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 600; 
+        text-align: left;
+    }
+
+    .courseModules-datas-details img {
+        height: 20px;
+    }
+    
+    .courseModules-datas-details h6 {
+        color: #E1EFFD; 
+        font-size: 22px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+    }
+
+    .courseModules-datas {
+        height: 372px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
 }
 
 @media all and (max-width:1145px) {
@@ -1358,7 +1495,7 @@ footer ul li a:hover{
     header {
         height: 48px;
         justify-content: space-between;
-        padding: 0 28px;
+        padding: 30px 60px 30px 60px;
     }
 
     .logo a {
@@ -1379,35 +1516,32 @@ footer ul li a:hover{
 
     .header__close {
         position: absolute;
-        right: 24px;
+        right: 45px;
         display: block;
         font-size: 24px;
         border-radius: 50%;
         z-index: 1000;
-        color: #000000;
-    }
-
-    .header__close:hover {
-        background-color: var(--teamColor);
+        color: #ffffff;
     }
 
     .nav {
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: var(--backgroundColor);
-        color: #000000ee;
+        background-color: #031830;
+        color: #ffffffee;
         width: 40%;
         height: 100vh;
-        padding: 24px 0;
+        padding: 40px 0px 0px 0px;
         z-index: 1000;
         transition: 0.5s;
         border-radius: 0 0 0 50%;
         z-index: 1000;
+        display: block;
     }
 
     header.sticky {
-        padding: 10px 80px 15px 80px;
+        padding: 30px 80px 30px 80px;
         background-color: #fff;
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
     }
@@ -1421,7 +1555,7 @@ footer ul li a:hover{
     }
 
     .logo img {
-        height: 20px;
+        height: 40px;
     }
 
     .nav__list {
@@ -1434,11 +1568,11 @@ footer ul li a:hover{
     }
 
     .nav__item a {
-        color: #000000;
+        color: #ffffff;
     }
 
     .nav__item {
-        margin: 2rem 0;
+        margin: 30px 0;
     }
 
     .nav__list a {
@@ -1458,6 +1592,19 @@ footer ul li a:hover{
         background: var(--teamColor);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
+    }
+
+    .nav button {
+        background-color: var(--teamColor);
+        border: 0px;
+        width: 90%;
+        font-weight: 500;
+        border-radius: 6px;
+        padding: 15px 25px;
+        color: #fff;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
