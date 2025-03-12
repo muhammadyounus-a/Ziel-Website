@@ -1510,7 +1510,7 @@ footer ul li a:hover{
 
     header.sticky .header__toggle {
         display: inline;
-        color: #000000;
+        color: #eeeeee;
         font-size: 24px;
     }
 
@@ -1542,7 +1542,7 @@ footer ul li a:hover{
 
     header.sticky {
         padding: 30px 80px 30px 80px;
-        background-color: #fff;
+        background-color: var(--backgroundColor);
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
     }
 
@@ -1608,6 +1608,75 @@ footer ul li a:hover{
     }
 }
 
+@media all and (max-width:990px) {
+    /* banner section css */
+
+    .banner-section {
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        padding: 0px 0px 40px 0px;
+    }
+
+    .banner-section .container {
+        background: linear-gradient(82deg, #004D95 0%, #002950 57%, #031d38 100%);
+        border-radius: 20px;
+        height: 85vh;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .banner-text h1 {
+        font-size: 55px; 
+        font-weight: 600; 
+        line-height: 80px;
+        margin-top: 0px;
+    }
+
+    .banner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .yellow-card {
+        background-color: rgba(244, 205, 35, 1);
+        height: 400px;
+        width: 550px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .yellow-card img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 480px;
+        width: auto;
+        z-index: 100;
+    }
+
+    .bullets-img {
+        position: absolute;
+        right: 35px;
+        bottom: -20px;
+        height: 250px;
+        width: auto;
+    }
+
+    .enrollments {
+        padding: 20px 5px;
+        left: 0px;
+    }
+
+    .text-card {
+        left: 0px;
+    }
+}
+
 @media all and (max-width:768px) {
 
     /* navbar css */
@@ -1620,7 +1689,7 @@ footer ul li a:hover{
     }
 
     .logo img {
-        height: 15px;
+        height: 40px;
     }
 
     header {
@@ -1646,15 +1715,11 @@ footer ul li a:hover{
         font-size: 24px;
         border-radius: 50%;
         z-index: 1000;
-        color: #000000;
+        color: #ffffff;
     }
 
     .nav__item a {
-        color: #000000;
-    }
-
-    .header__close:hover {
-        background-color: var(--backgroundColor);
+        color: #ffffff;
     }
 
     .nav {
@@ -1675,7 +1740,7 @@ footer ul li a:hover{
     .nav__list {
         display: flex;
         flex-direction: column;
-        margin-left: 20%;
+        margin-right: 4%;
     }
 
     .show {
@@ -1688,7 +1753,207 @@ footer ul li a:hover{
 
     header.sticky {
         padding: 10px 35px 10px 35px;
-        background-color: #fff;
+        background-color: var(--backgroundColor);
         box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+
+    /* banner section css */
+
+    .banner-section {
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .banner-section .container {
+        background: linear-gradient(82deg, #004D95 0%, #002950 57%, #031d38 100%);
+        border-radius: 20px;
+        height: 90vh;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 40px; 
+        font-weight: 600; 
+        line-height: 55px;
+        margin-top: 0px;
+    }
+
+    .banner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .banner-text .enrollBtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .dowload-btn button {
+        padding: 5px 10px !important;
+    }
+    
+    .dowload-btn button img {
+        height: 20px;
+        width: auto;
+    }
+    
+    .dowloadNow {
+        padding: 5px 10px !important;
+    }
+
+    .yellow-card {
+        background-color: rgba(244, 205, 35, 1);
+        height: 300px;
+        width: 450px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .yellow-card img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 350px;
+        width: auto;
+        z-index: 100;
+    }
+
+    .line-img {
+        right: 100px;
+    }
+
+    .bullets-img {
+        position: absolute;
+        right: 110px;
+        bottom: -20px;
+        height: 180px;
+        width: auto;
+    }
+
+    .enrollments {
+        padding: 20px 5px;
+        left: 0px;
+    }
+
+    .text-card {
+        left: 0px;
+    }
+}
+
+@media all and (max-width:425px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 10px 10px 10px 10px;
+    }
+
+    header.sticky {
+        padding: 10px 10px 10px 10px;
+        background-color: var(--backgroundColor);
+        box-shadow: 3px 4px 4px 0px rgba(214, 214, 214, 0.50);
+    }
+
+    /* banner section css */
+
+    .banner-section {
+        height: 100vh;
+        display: flex;
+        align-items: end;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .banner-section .container {
+        background: linear-gradient(82deg, #004D95 0%, #002950 57%, #031d38 100%);
+        border-radius: 0px;
+        height: 90vh;
+        padding: 20px 20px 10px 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 28px; 
+        font-weight: 600; 
+        line-height: 45px;
+        margin-top: 0px;
+    }
+
+    .banner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .banner-text .enrollBtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .dowload-btn button {
+        padding: 5px 10px !important;
+    }
+    
+    .dowload-btn button img {
+        height: 20px;
+        width: auto;
+    }
+    
+    .dowloadNow {
+        padding: 5px 10px !important;
+    }
+
+    .yellow-card {
+        background-color: rgba(244, 205, 35, 1);
+        height: 300px;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .yellow-card img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 300px;
+        width: auto;
+        z-index: 100;
+    }
+
+    .line-img {
+        right: 5px;
+    }
+
+    .bullets-img {
+        position: absolute;
+        right: 5px;
+        bottom: -20px;
+        height: 180px;
+        width: auto;
+    }
+
+    .enrollments {
+        padding: 20px 5px;
+        left: 0px;
+        display: none;
+    }
+
+    .text-card {
+        left: 0px;
+        display: none;
     }
 }
