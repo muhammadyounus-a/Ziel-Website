@@ -1615,20 +1615,20 @@ footer ul li a:hover{
         height: 100vh;
         display: flex;
         align-items: end;
-        padding: 0px 0px 40px 0px;
+        padding: 0px 0px 10px 0px;
     }
 
     .banner-section .container {
         background: linear-gradient(82deg, #004D95 0%, #002950 57%, #031d38 100%);
         border-radius: 20px;
-        height: 85vh;
-        padding: 30px 30px 30px 30px;
+        height: 95vh;
+        padding: 20px 20px 20px 20px;
     }
 
     .banner-text h1 {
-        font-size: 55px; 
+        font-size: 45px; 
         font-weight: 600; 
-        line-height: 80px;
+        line-height: 60px;
         margin-top: 0px;
     }
 
@@ -1637,13 +1637,13 @@ footer ul li a:hover{
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .yellow-card {
         background-color: rgba(244, 205, 35, 1);
-        height: 400px;
-        width: 550px;
+        height: 300px;
+        width: 450px;
         border-radius: 50px;
         position: relative;
         z-index: 100;
@@ -1654,16 +1654,38 @@ footer ul li a:hover{
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        height: 480px;
+        height: 350px;
         width: auto;
         z-index: 100;
     }
 
+    .banner-text .enrollBtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .dowload-btn button {
+        padding: 5px 10px !important;
+    }
+    
+    .dowload-btn button img {
+        height: 20px;
+        width: auto;
+    }
+    
+    .dowloadNow {
+        padding: 5px 10px !important;
+    }
+
+    .line-img {
+        right: 100px;
+    }
+
     .bullets-img {
         position: absolute;
-        right: 35px;
+        right: 110px;
         bottom: -20px;
-        height: 250px;
+        height: 180px;
         width: auto;
     }
 
@@ -1675,9 +1697,57 @@ footer ul li a:hover{
     .text-card {
         left: 0px;
     }
+
+    /* zielTech-section css */
+
+    .zielTech-section {
+        margin-top: 100px;
+    }
+
+    .zielTech-section-img {
+        display: none;
+    }
+
+    .tech-text h2 {
+        color: #fff;
+        font-size: 55px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 500; 
+    }
+
+    .tech-text h2 span {
+        color: var(--teamColor);
+    }
+
+    .tech-text p {
+        align-self: stretch; 
+        text-align: justify; 
+        color: #E1EFFD; 
+        font-size: 22px; 
+        font-family: "Inter", sans-serif; 
+        font-weight: 300; 
+        line-height: 55px;
+        margin-top: 50px;
+    }
+
+    /* learning-section css */
+
+    .timeLineCard4 {
+        margin-top: 35px;
+    }
+
+    /* contact section */
+
+    .contact-img {
+        display: none;
+    }
 }
 
 @media all and (max-width:768px) {
+
+    br {
+        display: none !important;
+    }
 
     /* navbar css */
     body {
@@ -1849,6 +1919,10 @@ footer ul li a:hover{
 
 @media all and (max-width:425px) {
 
+    br {
+        display: none !important;
+    }
+
     /* navbar css */
     body {
         overflow-x: hidden;
@@ -1955,5 +2029,391 @@ footer ul li a:hover{
     .text-card {
         left: 0px;
         display: none;
+    }
+
+
+    /* zielTech-section css */
+
+    .zielTech-section {
+        margin-top: 80px;
+    }
+
+    .tech-text h2 {
+        font-size: 28px; 
+        text-align: center;
+    }
+
+    .tech-text p {
+        font-size: 18px; 
+        line-height: 35px;
+        margin-top: 20px;
+    }
+
+    /* mobileRepair-section css */
+
+    .mobileRepair-section {
+        margin-top: 80px;
+    }
+
+    .mobileRepair-section h2 {
+        font-size: 28px;
+    }
+
+    .mobileRepair-section .card .card-body img {
+        height: 40px;
+        width: auto;
+    }
+
+    .mobileRepair-section .card .card-body h3 {
+        font-size: 24px; 
+    }
+
+    .mobileRepair-section .card .card-body p {
+        font-size: 18px; 
+        line-height: 35px;
+    }
+
+    /* learning-section css */
+
+    .learning-section {
+        margin-top: 80px;
+    }
+
+    .learning-section h3 {
+        font-size: 24px; 
+    }
+
+    .timeLine {
+        display: block;
+    }
+
+    /* timeLineCard1 */
+
+    .timeLineCard1 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .timeLineCard1 .number {
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+    }
+
+    .timeLineCard1 .line {
+        height: 40px;
+    }
+
+    .timeLineCard1 .timeLineBar {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .timeLineCard1 h6 {
+        font-size: 18px; 
+    }
+
+    .timeLineCard1 p {
+        font-size: 14px; 
+        line-height: 35px;
+    }
+
+    /* timeLineCard2 */
+
+    .timeLineCard2 {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .timeLineCard2 .number {
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+    }
+
+    .timeLineCard2 .line {
+        height: 40px;
+    }
+
+    .timeLineCard2 .timeLineBar {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .timeLineCard2 h6 { 
+        font-size: 18px;
+    }
+
+    .timeLineCard2 p {
+        font-size: 14px; 
+        line-height: 35px;
+    }
+
+    /* timeLineCard3 */
+
+    .timeLineCard3 {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .timeLineCard3 .number {
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+    }
+
+    .timeLineCard3 .line {
+        height: 40px;
+    }
+
+    .timeLineCard3 .timeLineBar {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .timeLineCard3 h6 {
+        font-size: 18px; 
+    }
+
+    .timeLineCard3 p {
+        font-size: 14px;  
+        line-height: 35px;
+    }
+
+    /* timeLineCard4 */
+
+    .timeLineCard4 {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .timeLineCard4 .number {
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+    }
+
+    .timeLineCard4 .line {
+        height: 40px;
+    }
+
+    .timeLineCard4 .timeLineBar {
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .timeLineCard4 h6 {
+        font-size: 18px;
+    }
+
+    .timeLineCard4 p { 
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    /* coursesSection css */
+
+    .coursesSection {
+        margin-top: 80px;
+    }
+
+    .coursesSection h2 {
+        font-size: 28px;
+    }
+
+    .coursesSection h3 {
+        font-size: 24px;
+    }
+
+    .online-course-details {
+        padding-top: 0px !important;
+    }
+
+    .online-course-details h5 {
+        font-size: 24px;
+    }
+
+    .course-details img {
+        height: 15px;
+    }
+
+    .course-details p { 
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .course-details2 p {
+        font-size: 14px;
+    }
+
+    .online-course-details button {
+        padding: 8px 0px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .coursesSection .explore-btn {
+        font-size: 14px; 
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin-top: 80px;
+    }
+
+    /* modules-section css */
+
+    .modules-section {
+        margin-top: 80px;
+    }
+
+    .modules-section h3 {
+        font-size: 28px;
+    }
+
+    .courseModules-datas h3 {
+        color: #3087D7; 
+        font-size: 24px; 
+    }
+
+    .courseModules-datas-details img {
+        height: 20px;
+    }
+
+    .courseModules-datas-details h6 {
+        font-size: 16px; 
+    }
+
+    .courseModules-datas {
+        margin-top: 0px !important;
+        height: 372px;
+    }
+
+    /* reviewSlider-section css */
+
+    .reviewSlider-section {
+        margin-top: 80px;
+    }
+
+    .reviewSlider-section h3 {
+        font-size: 28px;
+    }
+
+    .reviewSlider-section h6 {
+        font-size: 18px;
+    }
+
+    .reviewSlider-section .slider {
+        margin-top: 60px;
+    }
+
+    .owl-carousel .owl-item .card {
+        padding: 15px;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        overflow-y: auto !important;
+        padding-bottom: 20px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        height: 10px;
+        width: 10px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        height: 10px;
+        width: 10px;
+    }
+
+    .testimonial-client img {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .testimonial-client p {
+        font-size: 12px; 
+    }
+
+    .testimonial h5 {
+        font-size: 16px;  
+        line-height: 34px;
+    }
+
+    .client-rating img {
+        width: 15px; 
+        height: 15px;
+    }
+
+    /* contact section */
+
+    .contact-section {
+        margin-top: 80px;
+    }
+
+    .contact-section h4 {
+        font-size: 28px;
+    }
+
+    .contact-section h6 {
+        font-size: 18px;
+    }
+
+    .inputData h2 {
+        font-size: 28px;
+    }
+
+    .inputData h2 span {
+        font-size: 28px;
+    }
+
+    .form-item input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .form-item label {
+        font-size: 10px;
+    }
+
+    .form-item label span {
+        font-size: 10px;
+    }
+
+    .form-item input:focus + label,
+    .form-item input:valid + label {
+        font-size: 10px;
+    }
+
+    .dropdown-container select {
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .dropdown-container .dropdown-icon {
+        width: 8px;
+        height: 8px;
+    }
+
+    form button {
+        padding: 10px 0px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .contact-number {
+        display: flex;
+        gap: 20px;
+    }
+
+    .contact-number img {
+        height: 30px;
+    }
+
+    .contact-number h6 {
+        font-size: 10px;
+    }
+
+    .contact-number p { 
+        font-size: 10px;
     }
 }
